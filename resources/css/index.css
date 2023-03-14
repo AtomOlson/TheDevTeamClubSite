@@ -1,0 +1,244 @@
+/* Imports */
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+
+/* Defaults */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Proxima Nova', sans-serif;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    width: fit-content !important;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tile {
+    border: 1px solid #000000;
+    box-shadow: 0 5px 5px #1f1f1f;
+    font-size: 1.5rem;
+}
+
+.tile img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Fonts */
+
+
+
+/* Buttons */
+
+button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.medium {
+    width: 7rem;
+    height: 2rem;
+}
+
+.rounded {
+    border-radius: 5px;
+}
+
+/* Header */
+
+header {
+    background-color: rgba(0, 0, 0, 0.75);
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    z-index: 10;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 0 10px;
+}
+
+header nav a {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+header nav a:hover {
+    color: rgba(240, 240, 240, 0.9);
+}
+
+/* Main */
+.top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 0 rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    padding-top: 0;
+}
+/* Home */
+
+#home {
+    height: 50rem;
+    background-image: url('../images/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: start;
+    color: #ffffff;
+}
+
+#home h1 {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 0.25rem;
+    margin-top: 5rem;
+    margin-left: 10%;
+}
+
+#home a  {
+    width:  9rem;
+    height: 3rem;
+    position: absolute;
+    top: 70%;
+    left: calc(50% - (9rem / 2));
+    z-index: 5;
+}
+
+#home button {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 0;
+    font-size: 2rem;
+    transition: 300ms;
+}
+
+#home button a {
+    color: #000000 !important;
+    font-weight: 100 !important;
+}
+
+#home button:hover {
+    background-color: rgb(255, 255, 255);
+    transition: 150ms;
+}
+
+/* About */
+
+#about {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 2rem;
+    line-height: 1.5;
+}
+
+#about * {
+    max-width: 600px;
+}
+
+/* Office */
+
+#office {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 2rem 0;
+}
+
+#office h2 {
+    color: #ffffff;
+}
+
+#office .tile {
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 5px 5px #c0c0c0;
+}
+
+/* Featured */
+
+#featured {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#featured .tiles {
+    flex-direction: column;
+    align-items: center;
+}
+
+#featured .tile {
+    max-width: 800px;
+    margin: 2rem;
+}
+
+#featured .tile * {
+    padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+    #featured .tile {
+        margin: 1rem;
+    }
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 2rem 8rem 2rem 2rem;
+    color: #ffffff;
+}
